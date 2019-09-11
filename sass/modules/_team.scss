@@ -1,0 +1,123 @@
+.team-section {
+    background: #F5F5F5;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .floated-text {
+        font-size: 260px;
+        color: #EEEAEA;
+        font-family: 'Merriweather';
+        font-weight: bold;
+        line-height: 1;
+        position: absolute;
+        bottom: -95px;
+        left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+    .title-box {
+        h4,
+        h3,
+        p {
+            margin: 0;
+        }
+        h4 {
+            color: #E73B00;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 23px;
+        }
+        h3 {
+            color: #0F0F1B;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Merriweather';
+            letter-spacing: -.03em;
+            margin-bottom: 25px;
+        }
+        .thm-btn {
+            background-color: transparent;
+            border: 2px solid rgba(#000000, .2);
+            color: #5A5A71;
+            padding: 16px 43px;
+            margin-top: 26px;
+            &:hover {
+                background: #E73B00;
+                color: #fff;
+                border-color: #E73B00;
+            }
+        }
+    }
+    .single-team {
+        background: #fff;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 4px;
+        .img-box {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            &:hover {
+                .overlay {
+                    opacity: 1;
+                }
+            }
+            >img {
+                border-radius: 4px;
+                width: 100%;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(#E73B00, .4);
+                border-radius: 4px;
+                opacity: 0;
+                transition: all .4s ease;
+                .box {
+                    display: table;
+                    width: 100%;
+                    height: 100%;
+                    .content {
+                        display: table-cell;
+                        vertical-align: middle;
+                        a {
+                            color: #fff;
+                            font-size: 18px;
+                            transition: all .4s ease;
+                            &:hover {
+                                color: #0F0F1B;
+                            }
+                            +a {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .text-box {
+            padding-bottom: 26px;
+            span {
+                color: #E73B00;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            h3 {
+                margin: 0;
+                margin-top: 10px;
+                color: #0F0F1B;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Merriweather';
+                letter-spacing: -.03em;
+            }
+        }
+    }
+}

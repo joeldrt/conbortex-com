@@ -1,0 +1,39 @@
+.how-we-worked {
+    padding: 120px 0;
+    .single-how-we-worked {
+        padding: 42px 0;
+        text-align: center;
+        border-radius: 4px;
+        border: 2px solid rgba(#000000, .10);
+        transition: all .4s ease;
+        &:hover {
+            border-color: #E73B00;
+            i, h3 {
+            	color: #fff;
+            }
+        }
+        &:before {
+            background: #E73B00;
+        }
+        i {
+            color: #e73b00;
+            font-size: 50px;
+            line-height: 1;
+            transition: all .4s;
+        }
+        h3,
+        p {
+            margin: 0;
+        }
+        h3 {
+            font-size: 26px;
+            font-weight: bold;
+            font-family: 'Merriweather';
+            letter-spacing: -.03em;
+            color: #0F0F1B;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            transition: all .4s;
+        }
+    }
+}

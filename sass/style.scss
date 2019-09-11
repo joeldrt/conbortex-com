@@ -1,0 +1,129 @@
+/***************************************************************************************************************
+||||||||||||||||||||||||||||       MASTER STYLESHEET FOR Brixer               ||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+****************************************************************************************************************
+* 1. imported styles 
+* 2. miscelnious styles 
+* 3. header styles 
+* 4. banner styles 
+* 5. about us styles 
+* 6. how we worked styles 
+* 7. our journey styles 
+* 8. footer styles 
+* 9. contact styles 
+* 10. blog styles 
+* 11. blog styles 
+* 12. chairman message styles 
+* 13. services styles 
+* 14. testimonials styles 
+* 15. team styles 
+* 16. gallery styles 
+****************************************************************************************************************
+||||||||||||||||||||||||||||            End TABLE OF CONTENT                ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************/
+
+
+// math functions are not included in sass
+@import "drop-shadow-converter/mathfunctions";
+// import converter
+@import "drop-shadow-converter/drop-shadow-converter";
+// template sass helper functions
+@import "_helper-function.scss";
+
+/************************** 
+* 1. imported styles 
+***************************/
+
+@import 'modules/_imported';
+
+/************************** 
+* 2. miscelnious styles 
+***************************/
+
+@import 'modules/_miscelnious';
+
+/************************** 
+* 3. header styles 
+***************************/
+
+@import 'modules/_header';
+
+/************************** 
+* 4. banner styles 
+***************************/
+
+@import 'modules/_banner';
+
+/************************** 
+* 5. about us styles 
+***************************/
+
+@import 'modules/_about-us';
+
+/************************** 
+* 6. how we worked styles 
+***************************/
+
+@import 'modules/_how-we-worked';
+
+/************************** 
+* 7. our journey styles 
+***************************/
+
+@import 'modules/_our-journey';
+
+/************************** 
+* 8. footer styles 
+***************************/
+
+@import 'modules/_footer';
+
+/************************** 
+* 9. contact styles 
+***************************/
+
+@import 'modules/_contact';
+
+/************************** 
+* 10. blog styles 
+***************************/
+
+@import 'modules/_blog';
+
+/************************** 
+* 11. blog styles 
+***************************/
+
+@import 'modules/_brand';
+
+/************************** 
+* 12. chairman message styles 
+***************************/
+
+@import 'modules/_chairman-message';
+
+/************************** 
+* 13. services styles 
+***************************/
+
+@import 'modules/_services';
+
+/************************** 
+* 14. testimonials styles 
+***************************/
+
+@import 'modules/_testimonials';
+
+/************************** 
+* 15. team styles 
+***************************/
+
+@import 'modules/_team';
+
+/************************** 
+* 16. gallery styles 
+***************************/
+
+@import 'modules/_gallery';
