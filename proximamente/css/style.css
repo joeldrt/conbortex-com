@@ -1,0 +1,133 @@
+.logo-wrapper {
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    max-width: 510px;
+}
+
+.logo-wrapper img {
+    width: 100%;
+}
+
+.texto-encontruccion {
+    color: #13294e;
+    margin-top: 33px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 480px) {
+    .texto-encontruccion {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .texto-encontruccion {
+        font-size: 2.1rem;
+    }
+}
+
+.links-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 510px;
+    margin-top: 51px;
+    margin-bottom: 51px;
+}
+
+.btn {
+  height: 72px !important;
+  width: 72px !important;  
+}
+
+.btn i {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        height: 54px !important;
+        width: 54px !important;  
+    }
+
+    .btn i {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
+
+.btn-conbortex {
+    border-color: #f57e20;
+    color: #f57e20 !important;
+}
+
+.btn-conbortex:hover {
+    border-color: #f57e20 !important;
+    background-color: #f57e20 !important;
+    color: white !important;
+}
+
+@media screen and (max-width: 510px) {
+    .logo-wrapper {
+        margin-top: 27%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        max-width: 510px;
+    } 
+}
+
+.button-holder {
+    text-align: center;
+}
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.btn-circle {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    border-width: 3px;
+}
+
+.btn-circle i {
+    position: relative;
+    /* top: -1px; */
+}
+
+.btn-circle-sm {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.9rem;
+}
+
+.btn-circle-lg {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 1.1rem;
+}
+
+.btn-circle-xl {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 1.3rem;
+}
