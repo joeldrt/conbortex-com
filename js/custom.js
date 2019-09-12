@@ -443,8 +443,8 @@ function OnePageMenuScroll() {
             // grabing section id dynamically
             var sections = $(this).attr('href');
             $(sections).each(function() {
-                // checking is scroll bar are in section
-                if ($(this).offset().top <= windscroll + 100) {
+                // checking is scroll bar are in section // if ($(this).offset().top <= windscroll + 100)
+                if ($(this).offset().top <= windscroll + 390) {
                     // grabing the dynamic id of section
                     var Sectionid = $(sections).attr('id');
                     // removing current class from others
