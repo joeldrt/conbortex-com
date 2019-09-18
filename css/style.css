@@ -1382,7 +1382,8 @@ footer.footer .footer-widget.links-widget ul.link-list li a:hover {
 ***************************/
 .brand-carousel-wrap {
   margin-top: 39px;
-  background: #F5F5F5;
+  /* background: #F5F5F5; */
+  background: white;
   padding: 74px 0;
 }
 
