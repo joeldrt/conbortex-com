@@ -825,6 +825,20 @@ body.active-preloader-ovh {
   margin-bottom: 10px;
 }
 
+.about-us-content {
+  font-size: 27px;
+  color: white !important;
+  text-align: justify;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 375px) {
+  .about-us-content {
+    font-size: 24px; 
+    letter-spacing: 1.2px;
+  }
+}
+
 /************************** 
 * 6. how we worked styles 
 ***************************/
@@ -838,6 +852,7 @@ body.active-preloader-ovh {
   border: 2px solid rgba(0, 0, 0, 0.1);
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
+  min-height: 276px;
 }
 .how-we-worked .single-how-we-worked:hover {
   border-color: #f57e20;
@@ -869,6 +884,20 @@ body.active-preloader-ovh {
   margin-bottom: 15px;
   -webkit-transition: all .4s;
   transition: all .4s;
+}
+
+.objetivo-text {
+  font-size: 27px;
+  font-weight: bold;
+  color: #13294d !important;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 375px) {
+  .objetivo-text {
+    font-size: 24px; 
+    letter-spacing: 1.2px;
+  }
 }
 
 /************************** 
@@ -1112,7 +1141,7 @@ footer.footer .footer-widget.links-widget ul.link-list li a:hover {
 }
 
 .footer-copy {
-  background: #111123;
+  background: #13294d;
   padding: 23px 0;
 }
 .footer-copy p {
@@ -1130,7 +1159,7 @@ footer.footer .footer-widget.links-widget ul.link-list li a:hover {
 }
 
 .contact-box-wrapper {
-  margin-top: -315px;
+  /* margin-top: -315px; */
   margin-bottom: 51px;
   position: relative;
   z-index: 999;
@@ -1870,5 +1899,19 @@ footer.footer .footer-widget.links-widget ul.link-list li a:hover {
 
 .photo-gallery .title.responsive {
   display: none;
+}
+
+.equipo-content {
+  font-size: 21px;
+  color: #13294d !important;
+  text-align: justify;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 375px) {
+  .equipo-content {
+    font-size: 18px; 
+    letter-spacing: 1.2px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
