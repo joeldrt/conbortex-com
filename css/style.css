@@ -1158,6 +1158,76 @@ footer.footer .footer-widget.links-widget ul.link-list li a:hover {
   height: 600px;
 }
 
+.contacto-wrapper {
+  margin-bottom: 21px;
+  position: relative;
+  z-index: 999;
+}
+@media (max-width: 1150px) {
+  .contacto-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.contacto-wrapper .contacto-area-descripcion {
+  /* padding: 0; */
+  margin-right: auto;
+  margin-left: auto;
+  padding: 60px;
+  max-width: 1110px;
+  background: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-box-shadow: 0px 8px 30px rgba(139, 139, 139, 0.2);
+          box-shadow: 0px 8px 30px rgba(139, 139, 139, 0.2);
+}
+
+.contacto-title {
+  color: #f57e20;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.contacto-descripcion {
+  font-size: 21px;
+  /* font-weight: bold; */
+  color: #13294d !important;
+  text-align: justify;
+  /* letter-spacing: 2px; */
+}
+
+.contacto-botones-cambio-direccion {
+  max-width: 1110px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.city-btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: #f57e20;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 30px;
+  font-size: 14px;
+  /* padding: 19px 52.5px; */
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  min-width: 200px;
+  max-width: 200px;
+  margin-bottom: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.city-btn:hover {
+  background: #13294d;
+  color: #fff;
+}
+
 .contact-box-wrapper {
   /* margin-top: -315px; */
   margin-bottom: 51px;
@@ -1182,10 +1252,10 @@ footer.footer .footer-widget.links-widget ul.link-list li a:hover {
 .contact-box-wrapper .thm-container .contact-info-wrapper {
   background: #13294d;
   border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  padding-top: 64px;
+  /* border-bottom-left-radius: 5px; */
+  padding-top: 27px;
   padding-left: 70px;
-  padding-bottom: 70px;
+  /* padding-bottom: 21px; */
   position: relative;
 }
 .contact-box-wrapper .thm-container .contact-info-wrapper > i.fa-map-marker-alt {
@@ -1284,6 +1354,11 @@ footer.footer .footer-widget.links-widget ul.link-list li a:hover {
   margin-right: auto;
   width: 200px;
   margin-top: 30px;
+}
+
+.inner-row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 /************************** 
@@ -1905,7 +1980,7 @@ footer.footer .footer-widget.links-widget ul.link-list li a:hover {
   font-size: 21px;
   color: #13294d !important;
   text-align: justify;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
 }
 
 @media (max-width: 375px) {
