@@ -530,7 +530,7 @@ body.active-preloader-ovh {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99999;
+  z-index: 1041 !important;
   /* background: #13294d; */
   background: white;
   padding: 0;
@@ -1990,3 +1990,10 @@ footer.footer .footer-widget.links-widget ul.link-list li a:hover {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.galery-dialog {
+  width: calc(96vw) !important;
+  max-width: 990px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

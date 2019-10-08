@@ -194,7 +194,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 99999;
+        z-index: 1041 !important;
         background: #0F0F1B;
         padding: 0;
         box-shadow: drop-shadow-converter(#000000, $angle: 90, $distance: 0px, $spread: 0, $size: 16px, $opacity: 32%);
