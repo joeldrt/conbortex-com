@@ -1162,7 +1162,7 @@ footer.footer .footer-widget.links-widget ul.link-list li a:hover {
 .contacto-wrapper {
   margin-bottom: 21px;
   position: relative;
-  z-index: 999;
+  z-index: 99;
 }
 @media (max-width: 1150px) {
   .contacto-wrapper {
@@ -1233,7 +1233,7 @@ footer.footer .footer-widget.links-widget ul.link-list li a:hover {
   /* margin-top: -315px; */
   margin-bottom: 51px;
   position: relative;
-  z-index: 999;
+  z-index: 99;
 }
 @media (max-width: 1150px) {
   .contact-box-wrapper {
