@@ -107,7 +107,7 @@ function thmOwlCarousel() {
             dots: false,
             autoWidth: false,
             autoplay: true,
-            autoplayTimeout: 3000,
+            autoplayTimeout: 999,
             autoplayHoverPause: true,
             responsive: {
                 0: {
@@ -582,3 +582,57 @@ jQuery(window).on('resize', function() {
         photoGalleryMasonary();
     })(jQuery);
 });
+
+// digiall functions
+
+function setContactoPuebla() {
+    $('#contacto_ciudad').text("Puebla");
+    $('#contacto_tel').attr("href", "tel:2222850241");
+    $('#contacto_tel').text("(222) 285 0241");
+    $('#contacto_email1').attr("href", "mailto:contacto@conbortex.com");
+    $('#contacto_email1').text("contacto@conbortex.com");
+    $('#contacto_email2').attr("href", "mailto:ventas@conbortex.com");
+    $('#contacto_email2').text("ventas@conbortex.com");
+    $('#pueblaMap').show();
+    $('#queretaroMap').hide();
+    $('#celayaMap').hide();
+}
+
+function setContactoCDMX() {
+    $('#contacto_ciudad').text("CDMX");
+    $('#contacto_tel').attr("href", "tel:2222850241");
+    $('#contacto_tel').text("(222) 285 0241");
+    $('#contacto_email1').attr("href", "mailto:contacto@conbortex.com");
+    $('#contacto_email1').text("contacto@conbortex.com");
+    $('#contacto_email2').attr("href", "mailto:ventas@conbortex.com");
+    $('#contacto_email2').text("ventas@conbortex.com");
+    $('#pueblaMap').show();
+    $('#queretaroMap').hide();
+    $('#celayaMap').hide();
+}
+
+function setContactoQueretaro() {
+    $('#contacto_ciudad').text("Queretaro");
+    $('#contacto_tel').attr("href", "tel:4616199166");
+    $('#contacto_tel').text("(461) 619 9166");
+    $('#contacto_email1').attr("href", "mailto:contacto_cel@conbortex.com");
+    $('#contacto_email1').text("contacto_cel@conbortex.com");
+    $('#contacto_email2').attr("href", "mailto:ventas_cel@conbortex.com");
+    $('#contacto_email2').text("ventas_cel@conbortex.com");
+    $('#pueblaMap').hide();
+    $('#queretaroMap').show();
+    $('#celayaMap').hide();
+}
+
+function setContactoCelaya() {
+    $('#contacto_ciudad').text("Celaya");
+    $('#contacto_tel').attr("href", "tel:4616199166");
+    $('#contacto_tel').text("(461) 619 9166");
+    $('#contacto_email1').attr("href", "mailto:contacto_cel@conbortex.com");
+    $('#contacto_email1').text("contacto_cel@conbortex.com");
+    $('#contacto_email2').attr("href", "mailto:ventas_cel@conbortex.com");
+    $('#contacto_email2').text("ventas_cel@conbortex.com");
+    $('#pueblaMap').hide();
+    $('#queretaroMap').hide();
+    $('#celayaMap').show();
+}
