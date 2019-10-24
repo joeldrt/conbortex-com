@@ -591,8 +591,8 @@ function setContactoPuebla() {
     $('#contacto_tel').text("(222) 285 0241");
     $('#contacto_email1').attr("href", "mailto:vbarragan@conbortex.com");
     $('#contacto_email1').text("vbarragan@conbortex.com");
-    $('#contacto_email2').attr("href", "mailto:fernandez@conbortex.com");
-    $('#contacto_email2').text("fernandez@conbortex.com");
+    $('#contacto_email2').attr("href", "mailto:fernandoz@conbortex.com");
+    $('#contacto_email2').text("fernandoz@conbortex.com");
     $('#pueblaMap').show();
     $('#queretaroMap').hide();
     $('#celayaMap').hide();

@@ -688,19 +688,19 @@
                             <h3>Escríbenos<span>.</span></h3>
                         </div>
                         <!-- /.title -->
-                        <form action="inc/sendemail.php" class="row contact-form">
+                        <form class="row contact-form">
                             <div class="col-md-6">
-                                <input type="text" name="name" placeholder="Nombre" />
+                                <input type="text" name="name" id="name" placeholder="Nombre" />
                             </div>
                             <!-- /.col-md-6 -->
                             <div class="col-md-6">
-                                <input type="text" name="email" placeholder="Correo electrónico" />
+                                <input type="text" name="email" id="email" placeholder="Correo electrónico" />
                             </div>
                             <!-- /.col-md-6 -->
                             <div class="col-md-12">
-                                <textarea name="message" placeholder="Mensaje"></textarea>
-                                <button type="submit" class="thm-btn">enviar</button>
-                                <div class="form-result"></div>
+                                <textarea name="message" id="message" placeholder="Mensaje"></textarea>
+                                <button class="thm-btn" onclick="postForm()">enviar</button>
+                                <!-- <div class="form-result"></div> -->
                                 <!-- /.result -->
                             </div>
                             <!-- /.col-md-6 -->
@@ -986,28 +986,6 @@
         </div>
     </div>
 
-    <!-- Modal gallery 3 -->
-    <!-- <div class="modal fade" id="gallery3Modal" tabindex="-1" role="dialog" aria-labelledby="gallery3ModalLabel" aria-hidden="true">
-    <div class="modal-dialog galery-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title" style="display: inline-block" id="gallery3ModalLabel">Uniformes</h3>
-                <button type="button" class="btn btn-link pull-right" data-dismiss="modal" aria-label="Close" style="color: white !important;">
-                    <span aria-hidden="true" style="font-size: 1.5em;">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    
-                </div>
-            </div>
-            <div class="modal-footer">
-                <img src="img/conbortex_logo.png" class="logo-size" alt="Awesome Image"/>
-            </div>
-        </div>
-    </div>
-</div> -->
-
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
@@ -1026,6 +1004,39 @@
             event.preventDefault();
             $(this).ekkoLightbox();
         });
+        function postForm() {
+            var data = {
+                name: $("#name").val(),
+                mail: $("#email").val(),
+                message: $("#message").val()
+            };
+            if(data.name == null || data.name == '') {
+                alert('hace falta el nombre');
+                $("#name").focus();
+                return;
+            }
+            if(data.mail == null || data.mail == '') {
+                alert('falta tu correo electrónico');
+                $("#mail").focus();
+                return;
+            }
+            if(data.message == null || data.message == '') {
+                alert('falta el mensaje');
+                $("#message").focus();
+                return;
+            }
+            $.ajax({
+                type: "POST",
+                url: "form-to-mail.php",
+                data: data,
+                success: function(){
+                    alert('Gracias, en breve nos comunicaremos contigo... saludos.');
+                    $("#name").val('');
+                    $("#email").val('');
+                    $("#message").val('');
+                }
+            });
+        }
     </script>
 </body>
 
