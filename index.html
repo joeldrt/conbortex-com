@@ -1007,7 +1007,7 @@
         function postForm() {
             var data = {
                 name: $("#name").val(),
-                mail: $("#email").val(),
+                email: $("#email").val(),
                 message: $("#message").val()
             };
             if(data.name == null || data.name == '') {
@@ -1015,7 +1015,7 @@
                 $("#name").focus();
                 return;
             }
-            if(data.mail == null || data.mail == '') {
+            if(data.email == null || data.email == '') {
                 alert('falta tu correo electrónico');
                 $("#mail").focus();
                 return;
