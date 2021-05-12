@@ -25,8 +25,9 @@ $email_from = 'webpage@conbortex.com';//<== update the email address
 $email_subject = "Mensaje desde la página";
 $email_body = "Has recibido un mensaje de: $name.\n".
     "Mensaje:\n $message";
-    
-$to = "vbarragan@conbortex.com, fernandoz@conbortex.com"; // $to = "vbarragan@conbortex.com; fernandoz@conbortex.com";//<== update the email address
+
+$bcc_mail = "joe@digiall.mx; ozacaula@digiall.mx";
+$to = "vbarragan@conbortex.com"; // $to = "vbarragan@conbortex.com; fernandoz@conbortex.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_mail \r\n";
 $headers .= "Return-Path: $visitor_mail \r\n";

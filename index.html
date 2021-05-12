@@ -699,7 +699,7 @@
                             <!-- /.col-md-6 -->
                             <div class="col-md-12">
                                 <textarea name="message" id="message" placeholder="Mensaje"></textarea>
-                                <button class="thm-btn" onclick="postForm()">enviar</button>
+                                <button class="thm-btn" onclick="postForm(event)">enviar</button>
                                 <!-- <div class="form-result"></div> -->
                                 <!-- /.result -->
                             </div>
@@ -1004,7 +1004,8 @@
             event.preventDefault();
             $(this).ekkoLightbox();
         });
-        function postForm() {
+        function postForm(event) {
+            event.preventDefault();
             var data = {
                 name: $("#name").val(),
                 email: $("#email").val(),
@@ -1025,16 +1026,27 @@
                 $("#message").focus();
                 return;
             }
+            var data = {
+                    "contact_mail": data.email,
+                    "contact_name": data.name,
+                    "contact_message": data.message,
+                };
+
             $.ajax({
                 type: "POST",
-                url: "form-to-mail.php",
-                data: data,
+                url: "https://toolbox.dgx.life/v1/conbortex_mail",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(data),
                 success: function(){
                     alert('Gracias, en breve nos comunicaremos contigo... saludos.');
                     $("#name").val('');
                     $("#email").val('');
                     $("#message").val('');
-                }
+                },
+                error: function(error) {
+                    console.log(error);
+                },
+                dataType: "json",
             });
         }
     </script>
